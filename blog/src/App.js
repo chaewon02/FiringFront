@@ -1,38 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
-
+import React, { Component } from 'react';
+import './App.scss';
+import { Route, Routes, BrowserRouter} from 'react-router-dom';
+import Locations from './pages/locaions';
+import Main from './main';
+// 부트스트랩 안의 요소들은 사용되는데 css가 적용 안되서 추가했더니 된다
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
-    <div>
-      <nav className="navbar">
-        <ul className="navbar__logo">
-          <img src="img/logo.png" alt="Logo" />
-          <li className="nav-item"><a className="nav-link" href="#">공공시설</a></li>
-        </ul>
-
-        <ul className="navbar__menu">
-          <li className="nav-item"><a className="nav-link" href="#">이용안내</a></li>
-          <li className="nav-item"><a className="nav-link" href="#">고객센터</a></li>
-          <li className="nav-item"><a className="nav-link" href="#">로그인</a></li>
-          <li className="nav-item"><a className="nav-link" href="#">회원가입</a></li>
-        </ul>
-
-      </nav>
-
-      
-      <div className="Card1">
-          <div className="c1image">
-              <img className="gym" alt="main1" src="img/gym.png" />
-          </div>
+    <BrowserRouter>
+      <div id='container'>
+          <div>
+            <Routes>
+              <Route exact path="/" element={<Main/>}/>
+              <Route path="/p/*" element={<Locations/>} />
+            </Routes>
+        </div>
       </div>
-
-
-      <div id="footer">
-        <p>- 공공시설 예약 시스템 -</p>
-      </div>
-    </div>
+            
+    </BrowserRouter>
   );
 }
 
