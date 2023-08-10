@@ -13,7 +13,7 @@ const Container = styled.div`
 const AppDiv = styled.div`
     height: 100%;
     width: 100%;
-    border: 2px #7fccde solid;
+    border: 2px #808080 solid;
     border-radius: 30px;
     padding: 60px;
 `;
@@ -29,11 +29,11 @@ const SearchBar = styled.div`
     outline: none;
     padding: 0.5rem;
     transition: 0.25s;
-    color: #28bbf7;
+    color: #7fccde;
     background-color: white;
     cursor: pointer;
     &:hover {
-      background-color: #28bbf7;
+      background-color: #7fccde;
       color: white;
     }
   }

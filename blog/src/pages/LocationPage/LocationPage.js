@@ -5,6 +5,7 @@ import WithHeaderExample from "../../component/card/card";
 import { useParams } from 'react-router-dom';
 import TabContent from '../../component/tab/TabContent';
 import {Nav} from 'react-bootstrap';
+import OffcanvasExample from '../../component/bar/bar';
 
 function LocationPage() {
   const params = useParams();
@@ -14,7 +15,9 @@ function LocationPage() {
 
   return(
     <>
- 
+      <div id='searchbar'>
+        <OffcanvasExample />
+      </div>
       <div id='appdiv'>
         <div id='loc'>
           <div className='container-sm' id='first'>

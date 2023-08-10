@@ -10,7 +10,7 @@ const Container = styled.div`
 const ReserveDiv = styled.div`
     height: 100%;
     width: 100%;
-    border: 2px #7fccde solid;
+    border: 2px #808080 solid;
     border-radius: 30px;
     padding: 60px;
 `;

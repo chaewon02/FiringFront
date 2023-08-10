@@ -68,7 +68,7 @@
   .navbar__logo li {
     padding: 0;
   }
-  .navbar a{
+  .navbar .nav-link{ 
     text-decoration: none;
     color: white;
     width: 100px;
